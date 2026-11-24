@@ -1,23 +1,15 @@
 # CloudInlet Connectors
 
-Distribution repository for official downloadable CloudInlet provider connectors.
+Official downloadable Windows x64 provider packs for CloudInlet. The application, public SDK, Backblaze B2 and OneDrive source live in the source repository. Each connector release identifies the exact commit used to build it. [Application and provider source](https://github.com/TahsinFaiyaz30/CloudInlet) · [Published releases](https://github.com/TahsinFaiyaz30/CloudInlet-Connectors/releases)
 
-The app, public connector SDK and official connector source are maintained in [TahsinFaiyaz30/CloudInlet](https://github.com/TahsinFaiyaz30/CloudInlet). Code contributions belong there. This repository is for connector release assets, signed catalogs and release notes.
+## Install a connector
 
-## Status
+In a connector-enabled CloudInlet build, open **Connectors**, select a provider, review the publisher and download location, and choose **Install**. Use **Settings → Updates and about** for connector updates. The EXE, MSI, portable and MSIX builds use the same signed catalog. This repository publishes provider extensions independently of the app. [Connector guide](https://github.com/TahsinFaiyaz30/CloudInlet/blob/8f0e1f465da739b3235fb8590849ee50beb52f77/docs/CONNECTORS.md)
 
-This repository has been initialized. Production connector packages and the signed catalog have not been published here yet. Repository creation does not publish a new app version or establish Microsoft Store approval for connector delivery.
+The official publisher is **CloudInlet**. Its P-256 public key has SHA-256 fingerprint `D3E879A5EA4B3F3316472C9A9CFAC000DFDE296E7980D71AB0AD4C358741388A`. The app pins this key and the stable discovery URL. Each catalog entry authenticates a versioned release asset and its SHA-256 digest. [Signed catalog](https://raw.githubusercontent.com/TahsinFaiyaz30/CloudInlet-Connectors/main/catalog.json) · [Public signing identity](https://github.com/TahsinFaiyaz30/CloudInlet/blob/8f0e1f465da739b3235fb8590849ee50beb52f77/connectors/official-source.json)
 
-## Distribution plan
+## Maintainers
 
-- Publish signed, versioned .cipack files as GitHub Release assets, starting with Backblaze B2 and OneDrive.
-- Give connectors independent versions and declare compatible SDK versions and dependencies.
-- Publish a signed catalog that points to immutable package downloads. Each catalog release must retain compatible choices for supported app versions.
-- Keep signing keys, credentials, local test artifacts and user data out of this repository and its releases.
-- Record source commit, checksums and release notes for each package. Never replace the bytes of a published package version.
+Dispatch **Publish a signed connector** from the main branch with one official connector ID and a full reviewed CloudInlet commit SHA. The production environment signs the pack and the cumulative catalog. Each immutable release contains its signed pack, checksums and release notes. Rerun the same inputs to recover an interrupted release. Tooling changes require reviewing the signer commit in `.github/publisher.json`. [Release procedure](https://github.com/TahsinFaiyaz30/CloudInlet/blob/8f0e1f465da739b3235fb8590849ee50beb52f77/docs/CONNECTOR_RELEASES.md)
 
-CloudInlet's connector manager will use the configured official catalog for installation and updates. Microsoft Store delivery requires its own supported packaging and approval workflow; this repository does not bypass it.
-
-## Community and personal connectors
-
-Developers can maintain connectors in their own repositories or private folders using the shared SDK. A personal connector does not need a public repository. Community packages are not automatically official packages and keep their own publisher identity and trust review.
+Developers can keep custom connectors entirely private, or publish through their own repositories and publisher identities. [Private and community connector tutorial](https://github.com/TahsinFaiyaz30/CloudInlet/blob/8f0e1f465da739b3235fb8590849ee50beb52f77/docs/CONNECTORS.md)
