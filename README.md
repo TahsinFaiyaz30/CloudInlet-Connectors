@@ -5,7 +5,7 @@ The signed catalog lists each official connector independently. Select a connect
 | Connector | Version | Platform | Connector SDK | Package | Release notes |
 | --- | --- | --- | --- | --- | --- |
 | [Backblaze B2](https://github.com/TahsinFaiyaz30/CloudInlet-Connector-B2) | 1.0.0 | Windows x64 | ≥ 1.0.0, < 2.0.0 | [b2-1.0.0.cipack](https://github.com/TahsinFaiyaz30/CloudInlet-Connector-B2/releases/download/v1.0.0/b2-1.0.0.cipack) | [Release notes](https://github.com/TahsinFaiyaz30/CloudInlet-Connector-B2/releases/tag/v1.0.0) |
-| [OneDrive](https://github.com/TahsinFaiyaz30/CloudInlet-Connector-OneDrive) | 1.0.0 | Windows x64 | ≥ 1.0.0, < 2.0.0 | [onedrive-1.0.0.cipack](https://github.com/TahsinFaiyaz30/CloudInlet-Connectors/releases/download/onedrive-v1.0.0/onedrive-1.0.0.cipack) | [Release notes](https://github.com/TahsinFaiyaz30/CloudInlet-Connectors/releases/tag/onedrive-v1.0.0) |
+| [OneDrive](https://github.com/TahsinFaiyaz30/CloudInlet-Connector-OneDrive) | 1.0.0 | Windows x64 | ≥ 1.0.0, < 2.0.0 | [onedrive-1.0.0.cipack](https://github.com/TahsinFaiyaz30/CloudInlet-Connector-OneDrive/releases/download/v1.0.0/onedrive-1.0.0.cipack) | [Release notes](https://github.com/TahsinFaiyaz30/CloudInlet-Connector-OneDrive/releases/tag/v1.0.0) |
 
 ## Install and update
 
