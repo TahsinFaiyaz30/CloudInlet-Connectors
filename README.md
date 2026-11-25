@@ -10,6 +10,6 @@ The official publisher is **CloudInlet**. Its P-256 public key has SHA-256 finge
 
 ## Maintainers
 
-Dispatch **Publish a signed connector** from the main branch with one official connector ID and a full reviewed CloudInlet commit SHA. The production environment signs the pack and the cumulative catalog. Each immutable release contains its signed pack, checksums and release notes. Rerun the same inputs to recover an interrupted release. Tooling changes require reviewing the signer commit in `.github/publisher.json`. [Release procedure](https://github.com/TahsinFaiyaz30/CloudInlet/blob/8f0e1f465da739b3235fb8590849ee50beb52f77/docs/CONNECTOR_RELEASES.md)
+Dispatch **Publish a signed connector** from the main branch with one official connector ID and a full reviewed CloudInlet commit SHA. The production environment signs the pack and the cumulative catalog. Each immutable release contains its signed pack, checksums and release notes. Select **validate_only** to build and test without signing. Rerun the same release inputs to recover an interrupted publication. Tooling changes require reviewing the signer commit in `.github/publisher.json`. [Release procedure](https://github.com/TahsinFaiyaz30/CloudInlet/blob/b55ef1d2bec684ecf521308f72d206acc8c7e940/docs/CONNECTOR_RELEASES.md)
 
 Developers can keep custom connectors entirely private, or publish through their own repositories and publisher identities. [Private and community connector tutorial](https://github.com/TahsinFaiyaz30/CloudInlet/blob/8f0e1f465da739b3235fb8590849ee50beb52f77/docs/CONNECTORS.md)
