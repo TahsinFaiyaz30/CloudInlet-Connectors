@@ -9,12 +9,14 @@ The signed catalog lists each official connector independently. Select a connect
 
 ## Install and update
 
-In CloudInlet 1.2.5 or later, open **Connectors**, select the provider, review the publisher and download, and choose **Install**. Open **Settings → Updates and about** to update an installed connector. [Connector guide](https://github.com/TahsinFaiyaz30/CloudInlet/blob/e3397c76232cf1cd25861f60baaba7e121aaa242/docs/CONNECTORS.md)
+In CloudInlet 1.2.5 or later, open **Connectors**, select the provider, review the publisher and download, and choose **Install**. Open **Settings → Updates and about** to update an installed connector. [Connector guide](https://github.com/TahsinFaiyaz30/CloudInlet/blob/6c5fab45f37f7157ac367c009653a3bab987e2ad/docs/CONNECTORS.md)
 
-CloudInlet verifies the signed catalog and package. The official publisher fingerprint is `D3E879A5EA4B3F3316472C9A9CFAC000DFDE296E7980D71AB0AD4C358741388A`. [Central directory](https://github.com/TahsinFaiyaz30/CloudInlet-Connectors) · [Signed catalog](https://raw.githubusercontent.com/TahsinFaiyaz30/CloudInlet-Connectors/main/catalog.json) · [Connector development guide](https://github.com/TahsinFaiyaz30/CloudInlet/blob/e3397c76232cf1cd25861f60baaba7e121aaa242/docs/CONNECTORS.md)
+CloudInlet verifies the signed catalog and package. The official publisher fingerprint is `D3E879A5EA4B3F3316472C9A9CFAC000DFDE296E7980D71AB0AD4C358741388A`. [Central directory](https://github.com/TahsinFaiyaz30/CloudInlet-Connectors) · [Signed catalog](https://raw.githubusercontent.com/TahsinFaiyaz30/CloudInlet-Connectors/main/catalog.json) · [Connector development guide](https://github.com/TahsinFaiyaz30/CloudInlet/blob/6c5fab45f37f7157ac367c009653a3bab987e2ad/docs/CONNECTORS.md)
 
 ## Maintainers
 
-Dispatch **Publish a signed connector** with one provider and its reviewed source commit. The protected central workflow signs the package, verifies its public download and updates this directory from the complete signed catalog. [Release procedure](https://github.com/TahsinFaiyaz30/CloudInlet/blob/e3397c76232cf1cd25861f60baaba7e121aaa242/docs/CONNECTOR_RELEASES.md) · [Host package measurements](https://github.com/TahsinFaiyaz30/CloudInlet/blob/e3397c76232cf1cd25861f60baaba7e121aaa242/docs/CONNECTOR_VERIFICATION.md)
+Register providers in `providers.json`. Map an approved Microsoft Store download to its exact connector SHA-256 in `store-packages.json`. The protected workflow signs location changes in the catalog. Compatible connectors and download locations can change independently of CloudInlet.
+
+Dispatch **Publish a signed connector** with one provider and its reviewed source commit. The protected central workflow signs the package, verifies its public download and updates this directory from the complete signed catalog. [Release procedure](https://github.com/TahsinFaiyaz30/CloudInlet/blob/6c5fab45f37f7157ac367c009653a3bab987e2ad/docs/CONNECTOR_RELEASES.md) · [Host package measurements](https://github.com/TahsinFaiyaz30/CloudInlet/blob/6c5fab45f37f7157ac367c009653a3bab987e2ad/docs/CONNECTOR_VERIFICATION.md)
 
 <!-- Generated from the verified official catalog by CloudInlet.ConnectorTool release-readme. -->
